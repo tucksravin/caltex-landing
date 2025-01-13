@@ -61,7 +61,7 @@ text-transform: capitalize;
   
   <nav class="w-screen absolute top-0 left-0">
 	<ContentWidth class="flex flex-row justify-between">
-		<PrismicImage field={content.logo} class="h-10 mt-12" />
+		<PrismicImage field={content.logo} class="w-auto h-10 lg:h-[52px] mt-12" />
 	</ContentWidth>
   </nav>
   {#if viewpoortWidth>1024}
