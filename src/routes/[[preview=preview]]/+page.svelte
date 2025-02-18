@@ -172,7 +172,7 @@
 						<div class="w-1/3 h-full flex justify-center items-center">
 							<PrismicImage field={step.number} class="h-2/3 md:h-full object-contain" />
 						</div>
-						<div class="w-2/3 h-full flex flex-col items-start justify-start">
+						<div class="w-2/3 h-full flex flex-col items-start justify-center md:justify-start">
 							<h3>{step.title}</h3>
 							<p class="mt-4">{step.body}</p>
 						</div>
