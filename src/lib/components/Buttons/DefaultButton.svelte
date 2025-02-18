@@ -1,9 +1,9 @@
 <script lang="ts">
     let { href = "", onclick, class:passedClasses = '', children, isWhite=false, ...others  } = $props();
 
-    let baseClasses = $state("rounded border-2 border-solid border-dark px-10 pt-4 pb-3 h-fit hover:bg-dark hover:text-white transition")
+    let baseClasses = $state("rounded border-2 border-solid border-dark px-10 py-3 flex items-center justify-center h-fit hover:bg-dark hover:text-white transition")
     if(isWhite)
-        baseClasses="rounded text-white border-2 border-solid border-white px-10 pt-4 pb-3 h-fit hover:bg-white hover:text-dark transition"
+        baseClasses="rounded text-white border-2 border-solid border-white px-10 py-3 flex items-center justify-center h-fit hover:bg-white hover:text-dark transition"
 
 </script>
 
