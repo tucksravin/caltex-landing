@@ -132,6 +132,17 @@ interface HomeDocumentData {
   logo: prismic.ImageField<never>;
 
   /**
+   * logo mark field in *Home*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.logo_mark
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo_mark: prismic.ImageField<never>;
+
+  /**
    * aed field in *Home*
    *
    * - **Field Type**: Image

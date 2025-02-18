@@ -26,13 +26,14 @@ export default {
       md: '768px',
       lg: '1024px',
       xl: '1340px',
+      xxl: '1620px'
     },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
       black: '#000',
       white: '#fff',
-      light:'#C2D1D9',
+      light:'#EBEBEB',
       dark: '#131313',
       primary: '#EA7724'
     },
