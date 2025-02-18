@@ -170,7 +170,7 @@
 					{#each content.s6_steps as step }
 					<div class="p-4 md:p-8 h-40 flex justify-start gap-4 bg-black text-white">
 						<div class="w-1/3 h-full flex justify-center items-center">
-							<PrismicImage field={step.number} class="h-full object-contain" />
+							<PrismicImage field={step.number} class="h-2/3 md:h-full object-contain" />
 						</div>
 						<div class="w-2/3 h-full flex flex-col items-start justify-start">
 							<h3>{step.title}</h3>
