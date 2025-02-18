@@ -26,12 +26,12 @@
             {href} 
             {onclick} 
             class="{baseClasses} {passedClasses}">
-                {@render children()}
+                {@render children?.()}
         </a>
     {:else}
     <button {onclick}
             class="{baseClasses} {passedClasses}">
-            {@render children()}
+            {@render children?.()}
     </button>
     {/if}
 </div>
