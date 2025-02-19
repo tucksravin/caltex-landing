@@ -76,7 +76,7 @@
 			<div class="w-full flex justify-between flex-wrap">
 				{#each content.s2_icons as icon, i}
 				<div class="w-full md:w-1/2 pb-10 {i%2==0? "md:pr-5":"md:pl-5"}">
-					<div class="h-52 w-full bg-dark text-primary flex flex-row justify-between items-center rounded-[7px] p-11 gap-11">
+					<div class="h-40 md:h-52 w-full bg-dark text-primary flex flex-row justify-between items-center rounded-[7px] p-11 gap-11">
 						<PrismicImage class="w-32" field={icon.icon} />
 						<h3>{icon.label}</h3>
 					</div>
