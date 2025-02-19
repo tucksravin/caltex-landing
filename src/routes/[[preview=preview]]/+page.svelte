@@ -139,7 +139,7 @@
 				</svg>
 				<div class="w-4/5 xl:w-3/5 xxl:w-1/2 h-full items-start justify-center flex flex-col gap-3">
 					<h3>{content.s4_quote}</h3>
-					<p class="label">{content.s4_attribution}</p>
+					<p>{content.s4_attribution}</p>
 				</div>
 					
 			</div>
@@ -168,11 +168,11 @@
 				</div>
 				<div class="w-full md:w-1/2 flex flex-col gap-10 md:pl-5">
 					{#each content.s6_steps as step }
-					<div class="p-4 md:p-8 h-40 flex justify-start gap-4 bg-black text-white">
-						<div class="w-1/3 h-full flex justify-center items-center">
-							<PrismicImage field={step.number} class="h-2/3 md:h-full object-contain" />
+					<div class="p-4 md:p-8 h-48 flex justify-start gap-4 bg-black text-white rounded-lg">
+						<div class="w-1/4 h-full flex justify-center items-center -translate-x-[20%]">
+							<PrismicImage field={step.number} class="h-2/3  md:h-full object-contain" />
 						</div>
-						<div class="w-2/3 h-full flex flex-col items-start justify-center md:justify-start">
+						<div class="w-3/4 h-full flex flex-col items-start justify-center md:justify-start -translate-x-[5%]">
 							<h3>{step.title}</h3>
 							<p class="mt-4">{step.body}</p>
 						</div>
@@ -206,7 +206,7 @@
 		</ContentWidth>
 	</section>
 
-	<section id="s8" class="w-screen bg-primary text-white mt-10 md:mt-24 py-10 md:py-24 relative">
+	<section id="s8" class="w-screen bg-primary text-white mt-10 md:mt-48 py-10 md:py-24 relative">
 		<ContentWidth class="flex flex-col md:flex-row">
 			<div class="w-full md:w-1/2 flex flex-col items-center md:items-start md:pr-5">
 				<PrismicImage class="w-full" field={content.s8_title} />
