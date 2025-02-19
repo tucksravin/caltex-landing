@@ -62,7 +62,7 @@
 	<section id="s1" class="h-screen w-screen overflow-hidden">
 		<ContentWidth class="flex flex-row h-full items-end relative">
 			<PrismicImage class="md:w-2/3 mb-64" field={content.s1_title} />
-			<div class="w-screen h-40 p-8 bg-primary text-dark absolute left-0 bottom-8 rounded-lg items-center flex">
+			<div class="w-screen p-8 bg-primary text-dark absolute left-0 bottom-8 rounded-lg items-center flex">
 				<h3 class="md:w-1/2 ">{content.s1_subtitle}</h3>
 			</div>
 			<PrismicImage class="absolute bottom-8 right-0 w-1/2 translate-x-[20%] hidden md:block" field={content.aed} />
@@ -113,7 +113,7 @@
 			</div>
 		</ContentWidth>
 	</section>
-	<section id="s4" class="w-screen bg-primary text-white mt-10 lg:mt-24 py-10 lg:py-24 relative overflow-hidden">
+	<section id="s4" class="w-screen bg-primary text-white mt-10 lg:mt-24 py-24 relative overflow-hidden">
 		<ContentWidth class="flex flex-col gap-10 lg:gap-20">
 			<h2 class="lg:w-2/3">{content.s4_title}</h2>
 			<div>
@@ -169,10 +169,10 @@
 				<div class="w-full md:w-1/2 flex flex-col gap-10 md:pl-5">
 					{#each content.s6_steps as step }
 					<div class="p-4 md:p-8 h-48 flex justify-start gap-4 bg-black text-white rounded-lg">
-						<div class="w-1/4 h-full flex justify-center items-center -translate-x-[20%]">
-							<PrismicImage field={step.number} class="h-2/3  md:h-full object-contain" />
+						<div class="w-1/4 h-full flex justify-center items-center md:-translate-x-[20%]">
+							<PrismicImage field={step.number} class="h-3/5  md:h-full object-contain" />
 						</div>
-						<div class="w-3/4 h-full flex flex-col items-start justify-center md:justify-start -translate-x-[5%]">
+						<div class="w-3/4 h-full flex flex-col items-start justify-center md:justify-start md:-translate-x-[5%]">
 							<h3>{step.title}</h3>
 							<p class="mt-4">{step.body}</p>
 						</div>
