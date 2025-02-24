@@ -62,7 +62,7 @@
 	<section id="s1" class="h-screen w-screen overflow-hidden">
 		<ContentWidth class="flex flex-col h-full items-start justify-end relative">
 			<PrismicImage class="w-3/5 pb-4 -translate-x-[20%] hidden xs:block md:hidden" field={content.aed} />
-			<PrismicImage class="md:w-2/3 mb-64" field={content.s1_title} />
+			<PrismicImage class="md:w-2/3 mb-48 md:mb-64" field={content.s1_title} />
 			<div class="w-screen p-8 bg-primary text-dark absolute left-0 bottom-8 rounded-lg items-center flex">
 				<h3 class="md:w-1/2 ">{content.s1_subtitle}</h3>
 			</div>
