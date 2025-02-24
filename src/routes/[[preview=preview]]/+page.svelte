@@ -49,7 +49,7 @@
 		<button class="absolute top-6 right-6 pointer-events-auto" onclick={()=>isModalOpen=false} aria-label="close">
 			<i class="fa-sharp fa-solid fa-xl fa-close"></i>
 		</button>
-		<h2 class="text-white"><span>Choosing our AED services&nbsp;</span><span> ensures your readiness&nbsp;</span><span> for emergencies.</span></h2>
+		<h2 class="text-white"><span>Choosing our&nbsp;</span><span> AED services&nbsp;</span><span> ensures your readiness&nbsp;</span><span> for emergencies.</span></h2>
 		<h3 class="text-white">Contact Ryan Kohen at <a href="mailto:ryan@ryankohnen.com" class="text-black">ryan@ryankohnen.com</a> <br/> or leave a message <a href="tel:210.273.7767" class="text-black">210.273.7767</a></h3>
 
 	</ContentWidth>
@@ -60,7 +60,8 @@
 
 	<ScreenWidthImage field={content.background_image} class="flex justify-between" backdrop />
 	<section id="s1" class="h-screen w-screen overflow-hidden">
-		<ContentWidth class="flex flex-row h-full items-end relative">
+		<ContentWidth class="flex flex-col h-full items-start justify-end relative">
+			<PrismicImage class="w-3/5 pb-4 -translate-x-[20%] hidden xs:block md:hidden" field={content.aed} />
 			<PrismicImage class="md:w-2/3 mb-64" field={content.s1_title} />
 			<div class="w-screen p-8 bg-primary text-dark absolute left-0 bottom-8 rounded-lg items-center flex">
 				<h3 class="md:w-1/2 ">{content.s1_subtitle}</h3>
@@ -71,11 +72,11 @@
 
 	</section>
 	<section id="s2" class="w-screen mt-20 lg:mt-52">
-		<ContentWidth class="flex flex-col items-start justify-start gap-11 lg:gap-20">
+		<ContentWidth class="flex flex-col items-start justify-start gap-8 lg:gap-20">
 			<h2 class="text-dark md:w-1/3">{content.s2_eyebrow}</h2>
 			<div class="w-full flex justify-between flex-wrap">
 				{#each content.s2_icons as icon, i}
-				<div class="w-full md:w-1/2 pb-10 {i%2==0? "md:pr-5":"md:pl-5"}">
+				<div class="w-full md:w-1/2 pb-8 md:pb-10 {i%2==0? "md:pr-5":"md:pl-5"}">
 					<div class="h-40 md:h-52 w-full bg-dark text-primary flex flex-row justify-between items-center rounded-[7px] p-11 gap-11">
 						<PrismicImage class="w-32" field={icon.icon} />
 						<h3>{icon.label}</h3>
@@ -85,7 +86,7 @@
 			</div>
 			<div class=" md:w-1/3">
 				<h3 class="text-dark">{content.s2_closing_text}</h3>
-				<DefaultButton class="mt-11" onclick={()=>isModalOpen=true} >Request Info</DefaultButton>
+				<DefaultButton class="mt-8" onclick={()=>isModalOpen=true} >Request Info</DefaultButton>
 
 			</div>
 		</ContentWidth>
@@ -113,7 +114,7 @@
 			</div>
 		</ContentWidth>
 	</section>
-	<section id="s4" class="w-screen bg-primary text-white mt-10 lg:mt-24 py-24 relative overflow-hidden">
+	<section id="s4" class="w-screen bg-primary text-white mt-16 py-16 md:mt-24 md:py-24 relative overflow-hidden">
 		<ContentWidth class="flex flex-col gap-10 lg:gap-20">
 			<h2 class="lg:w-2/3">{content.s4_title}</h2>
 			<div>
@@ -149,7 +150,7 @@
 	</section>
 	<section id="s5">
 		<ScreenWidthImage field={content.s5_background} class="h-full flex flex-col items-start justify-end py-24" darken>
-			<PrismicImage class="w-3/5" field={content.s5_title} />
+			<PrismicImage class="w-full md:w-3/5" field={content.s5_title} />
 			<DefaultButton class="mt-12" isWhite onclick={()=>isModalOpen=true} >Request Info</DefaultButton>
 			
 		</ScreenWidthImage>
@@ -187,7 +188,7 @@
 			</div>
 		</ContentWidth>
 	</section>
-	<section id="s7" class="w-screen mt-24 lg:mt-52 relative">
+	<section id="s7" class="w-screen mt-24 lg:mt-36 relative">
 		<PrismicImage class="absolute h-[100vw] w-screen top-0 right-[4vw] lg:top-[5vw] lg:left-0 lg:h-[40vw] lg:w-[40vw] rounded-r-lg" field={content.s7_image}/>
 		<ContentWidth class="h-full pt-[108vw] lg:py-[5vw] flex justify-end items-end text-dark relative">
 
@@ -206,17 +207,17 @@
 		</ContentWidth>
 	</section>
 
-	<section id="s8" class="w-screen bg-primary text-white mt-10 md:mt-48 py-10 md:py-24 relative">
+	<section id="s8" class="w-screen bg-primary text-white mt-16 md:mt-48 py-16 md:py-24 relative">
 		<ContentWidth class="flex flex-col md:flex-row">
-			<div class="w-full md:w-1/2 flex flex-col items-center md:items-start md:pr-5">
+			<div class="w-full md:w-1/2 flex flex-col items-start md:pr-5">
 				<PrismicImage class="w-full" field={content.s8_title} />
-				<PrismicImage class="w-2/3 md:-translate-x-[20%]" field={content.s8_aed} />
+				<PrismicImage class="w-2/3 -translate-x-[20%]" field={content.s8_aed} />
 			</div>
 			<div class="w-full md:w-1/2 flex flex-col md:pl-5">
-				<div class="rich-text text-dark mt-4">
-					<PrismicRichText field={content.s8_dark_text} />
+				<div class="rich-text mt-4">
+					<PrismicRichText field={content.s8_subheader} />
 				</div>
-				<div class="rich-text text-white">
+				<div class="rich-text mt-8">
 					<PrismicRichText field={content.s8_light_text} />
 				</div>
 			</div>

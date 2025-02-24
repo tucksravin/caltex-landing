@@ -289,13 +289,13 @@
           "thumbnails": []
         }
       },
-      "s8_dark_text": {
+      "s8_subheader": {
         "type": "StructuredText",
         "config": {
-          "label": "s8 dark text",
+          "label": "s8 subheader",
           "placeholder": "",
           "allowTargetBlank": true,
-          "multi": "paragraph"
+          "single": "heading3"
         }
       },
       "s8_light_text": {

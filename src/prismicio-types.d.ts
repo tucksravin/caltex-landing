@@ -431,15 +431,15 @@ interface HomeDocumentData {
   s8_aed: prismic.ImageField<never>;
 
   /**
-   * s8 dark text field in *Home*
+   * s8 subheader field in *Home*
    *
-   * - **Field Type**: Rich Text
+   * - **Field Type**: Title
    * - **Placeholder**: *None*
-   * - **API ID Path**: home.s8_dark_text
+   * - **API ID Path**: home.s8_subheader
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  s8_dark_text: prismic.RichTextField;
+  s8_subheader: prismic.TitleField;
 
   /**
    * s8 light text field in *Home*
