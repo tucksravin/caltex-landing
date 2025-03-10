@@ -3,6 +3,7 @@
 	import { page } from '$app/stores';
 	import { repositoryName } from '$lib/prismicio';
 	import "../app.css";
+	import "../fonts.css"
 	/**
 	 * @typedef {Object} Props
 	 * @property {import('svelte').Snippet} [children]

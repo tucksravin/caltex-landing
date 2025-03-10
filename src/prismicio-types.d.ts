@@ -4,6 +4,116 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
+/**
+ * Item in *Home → s2 icons*
+ */
+export interface HomeDocumentDataS2IconsItem {
+  /**
+   * icon field in *Home → s2 icons*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s2_icons[].icon
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  icon: prismic.ImageField<never>;
+
+  /**
+   * label field in *Home → s2 icons*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s2_icons[].label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
+}
+
+/**
+ * Item in *Home → s3 bullets*
+ */
+export interface HomeDocumentDataS3BulletsItem {
+  /**
+   * text field in *Home → s3 bullets*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s3_bullets[].text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+}
+
+/**
+ * Item in *Home → s4 image blocks*
+ */
+export interface HomeDocumentDataS4ImageBlocksItem {
+  /**
+   * image field in *Home → s4 image blocks*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s4_image_blocks[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * title field in *Home → s4 image blocks*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s4_image_blocks[].title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * body field in *Home → s4 image blocks*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s4_image_blocks[].body
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  body: prismic.KeyTextField;
+}
+
+/**
+ * Item in *Home → s6 steps*
+ */
+export interface HomeDocumentDataS6StepsItem {
+  /**
+   * number field in *Home → s6 steps*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s6_steps[].number
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  number: prismic.ImageField<never>;
+
+  /**
+   * title field in *Home → s6 steps*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s6_steps[].title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * body field in *Home → s6 steps*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s6_steps[].body
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  body: prismic.KeyTextField;
+}
+
 type HomeDocumentDataSlicesSlice = never;
 
 /**
@@ -20,6 +130,17 @@ interface HomeDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   logo: prismic.ImageField<never>;
+
+  /**
+   * logo mark field in *Home*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.logo_mark
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo_mark: prismic.ImageField<never>;
 
   /**
    * aed field in *Home*
@@ -42,6 +163,294 @@ interface HomeDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   background_image: prismic.ImageField<never>;
+
+  /**
+   * s1 title field in *Home*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s1_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  s1_title: prismic.ImageField<never>;
+
+  /**
+   * s1 subtitle field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s1_subtitle
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s1_subtitle: prismic.KeyTextField;
+
+  /**
+   * s2 eyebrow field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s2_eyebrow
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s2_eyebrow: prismic.KeyTextField;
+
+  /**
+   * s2 icons field in *Home*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s2_icons[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  s2_icons: prismic.GroupField<Simplify<HomeDocumentDataS2IconsItem>>;
+
+  /**
+   * s2 closing text field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s2_closing_text
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s2_closing_text: prismic.KeyTextField;
+
+  /**
+   * s3 image field in *Home*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s3_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  s3_image: prismic.ImageField<never>;
+
+  /**
+   * s3 title field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s3_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s3_title: prismic.KeyTextField;
+
+  /**
+   * s3 bullets field in *Home*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s3_bullets[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  s3_bullets: prismic.GroupField<Simplify<HomeDocumentDataS3BulletsItem>>;
+
+  /**
+   * s3 closing text field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s3_closing_text
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s3_closing_text: prismic.KeyTextField;
+
+  /**
+   * s4 title field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s4_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s4_title: prismic.KeyTextField;
+
+  /**
+   * s4 body field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s4_body
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s4_body: prismic.KeyTextField;
+
+  /**
+   * s4 image blocks field in *Home*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s4_image_blocks[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  s4_image_blocks: prismic.GroupField<
+    Simplify<HomeDocumentDataS4ImageBlocksItem>
+  >;
+
+  /**
+   * s4 quote field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s4_quote
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s4_quote: prismic.KeyTextField;
+
+  /**
+   * s4 attribution field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s4_attribution
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s4_attribution: prismic.KeyTextField;
+
+  /**
+   * s5 background field in *Home*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s5_background
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  s5_background: prismic.ImageField<never>;
+
+  /**
+   * s5 title field in *Home*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s5_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  s5_title: prismic.ImageField<never>;
+
+  /**
+   * s6 title field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s6_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s6_title: prismic.KeyTextField;
+
+  /**
+   * s6 body field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s6_body
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s6_body: prismic.KeyTextField;
+
+  /**
+   * s6 steps field in *Home*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s6_steps[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  s6_steps: prismic.GroupField<Simplify<HomeDocumentDataS6StepsItem>>;
+
+  /**
+   * s7 image field in *Home*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s7_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  s7_image: prismic.ImageField<never>;
+
+  /**
+   * s7 title field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s7_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  s7_title: prismic.KeyTextField;
+
+  /**
+   * s7 body field in *Home*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s7_body
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  s7_body: prismic.RichTextField;
+
+  /**
+   * s8 title field in *Home*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s8_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  s8_title: prismic.ImageField<never>;
+
+  /**
+   * s8 aed field in *Home*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s8_aed
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  s8_aed: prismic.ImageField<never>;
+
+  /**
+   * s8 subheader field in *Home*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s8_subheader
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  s8_subheader: prismic.TitleField;
+
+  /**
+   * s8 light text field in *Home*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.s8_light_text
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  s8_light_text: prismic.RichTextField;
 
   /**
    * Slice Zone field in *Home*
@@ -2114,6 +2523,10 @@ declare module "@prismicio/client" {
     export type {
       HomeDocument,
       HomeDocumentData,
+      HomeDocumentDataS2IconsItem,
+      HomeDocumentDataS3BulletsItem,
+      HomeDocumentDataS4ImageBlocksItem,
+      HomeDocumentDataS6StepsItem,
       HomeDocumentDataSlicesSlice,
       PageDocument,
       PageDocumentData,
