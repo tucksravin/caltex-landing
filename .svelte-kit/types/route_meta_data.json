@@ -5,6 +5,22 @@
 	"/api/preview": [
 		"src/routes/api/preview/+server.js"
 	],
+	"/[[preview=preview]]/community": [
+		"src/routes/[[preview=preview]]/community/+page.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/[[preview=preview]]/contact": [
+		"src/routes/[[preview=preview]]/contact/+page.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/[[preview=preview]]/leasing": [
+		"src/routes/[[preview=preview]]/leasing/+page.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/[[preview=preview]]/purchases": [
+		"src/routes/[[preview=preview]]/purchases/+page.server.js",
+		"src/routes/+layout.server.js"
+	],
 	"/slice-simulator": [
 		"src/routes/+layout.server.js"
 	],

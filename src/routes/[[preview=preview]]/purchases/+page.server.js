@@ -1,4 +1,3 @@
-export const prerender = 'auto';
 import { asText } from '@prismicio/client';
 
 import { createClient } from '$lib/prismicio';
@@ -15,4 +14,8 @@ export async function load({ fetch, cookies }) {
 		meta_title: page.data.meta_title,
 		meta_image: page.data.meta_image.url
 	};
+}
+
+export function entries() {
+	return [{}];
 }

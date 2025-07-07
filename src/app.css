@@ -78,11 +78,16 @@ a, button{
 
 
 
-h1{
-    font-size: 66px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.21em; /* 121.212% */
+h1{color: var(--orange, #EA7724);
+
+/* Display - fill */
+font-family: "Impact";
+font-size: 115px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 115px */
+letter-spacing: 2.3px;
+text-transform: uppercase;
 }
 
 h2{
@@ -104,8 +109,15 @@ line-height: 1.3em;
 
 
 h5{
-   font-size: 1.5rem; 
-   line-height: 1.5em;
+   color: #131313;
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Copy */
+font-family: "Helvetica Neue LT Std";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
 }
 
 h6{
@@ -130,6 +142,16 @@ p{
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 150% */
+}
+
+footer{
+    color: #505D68;
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
 }
 
 span{
