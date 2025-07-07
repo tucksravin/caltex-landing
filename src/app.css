@@ -111,9 +111,6 @@ line-height: 1.3em;
 h5{
    color: #131313;
 font-feature-settings: 'liga' off, 'clig' off;
-
-/* Body Copy */
-font-family: "Helvetica Neue LT Std";
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
@@ -181,8 +178,7 @@ span{
     }
     
     h5{
-       font-size: 1.5rem; 
-       line-height: 1.5em;
+
     }
     
     
@@ -216,7 +212,7 @@ span{
     }
     
     h5{
-       font-size: 1.5rem; 
+    
     }
     
     
@@ -250,8 +246,7 @@ span{
     }
     
     h5{
-       font-size: 1.5rem; 
-       line-height: 1.5em;
+  
     }
     
     

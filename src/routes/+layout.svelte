@@ -121,7 +121,7 @@
 />
 {#if showNav}
 <div class="absolute w-screen h-lvh top-0 left-0 pt-48" transition:fade>
-	<ContentWidth class='gap-20 flex flex-col items-start'>
+	<ContentWidth class='gap-8 md:gap-20 flex flex-col items-start'>
 		<a class='text-primary hover:brightness-75 transition duration-300' onclick={()=>showNav=false} href='/leasing'><h1 class='bump'>AED LEASING</h1></a>
 		<a class='text-primary hover:brightness-75 transition duration-300' onclick={()=>showNav=false} href='/purchases'><h1 class='bump'>AED PURCHASES</h1></a>
 		<a class='text-primary hover:brightness-75 transition duration-300' onclick={()=>showNav=false} href='/community'><h1 class='bump'>Grants & Community</h1></a>
