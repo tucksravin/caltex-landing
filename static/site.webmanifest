@@ -1,6 +1,6 @@
 {
-  "name": "CALTEX",
-  "short_name": "CALTEX",
+  "name": "CalTex",
+  "short_name": "CalTex",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#ea7724",
   "background_color": "#ffffff",
   "display": "standalone"
 }
