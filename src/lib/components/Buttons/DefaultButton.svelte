@@ -26,12 +26,12 @@
             {href} 
             {onclick} 
             class="{baseClasses} {passedClasses}">
-               <div class='translate-y-[2.25px]'> {@render children?.()}</div>
+               <div class='md:translate-y-[2.25px]'> {@render children?.()}</div>
         </a>
     {:else}
     <button {onclick}
             class="{baseClasses} {passedClasses}">
-               <div class='translate-y-[2.25px]'> {@render children?.()}</div>
+               <div class='md:translate-y-[2.25px]'> {@render children?.()}</div>
     </button>
     {/if}
 </div>
