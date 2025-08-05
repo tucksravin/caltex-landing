@@ -121,11 +121,11 @@
 />
 {#if showNav}
 <div class="absolute w-screen h-lvh top-0 left-0 pt-48" transition:fade>
-	<ContentWidth class='gap-8 md:gap-20 flex flex-col items-start'>
-		<a class='text-primary hover:brightness-75 transition duration-300' onclick={()=>showNav=false} href='/leasing'><h3 class='bump'>AED Leasing</h3></a>
-		<a class='text-primary hover:brightness-75 transition duration-300' onclick={()=>showNav=false} href='/purchases'><h3 class='bump'>AED Purchases</h3></a>
-		<a class='text-primary hover:brightness-75 transition duration-300' onclick={()=>showNav=false} href='/community'><h3 class='bump'>Grants & Community</h3></a>
-		<a class='text-primary hover:brightness-75 transition duration-300' onclick={()=>showNav=false} href='/contact'><h3 class='bump'>Contact Us</h3></a>
+	<ContentWidth class='gap-8 md:gap-20 flex flex-col items-end'>
+		<a class='text-primary hover:brightness-75 transition duration-300' onclick={()=>showNav=false} href='/leasing'><h1 class='bump'>AED Leasing</h1></a>
+		<a class='text-primary hover:brightness-75 transition duration-300' onclick={()=>showNav=false} href='/purchases'><h1 class='bump'>AED Purchases</h1></a>
+		<a class='text-primary hover:brightness-75 transition duration-300' onclick={()=>showNav=false} href='/community'><h1 class='bump'>Grants & Community</h1></a>
+		<a class='text-primary hover:brightness-75 transition duration-300' onclick={()=>showNav=false} href='/contact'><h1 class='bump'>Contact Us</h1></a>
 	</ContentWidth>
 </div>
 {:else}
