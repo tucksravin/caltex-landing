@@ -69,7 +69,7 @@
     </ContentWidth>
   </div>
 {/if}
-
+<div class='lg:h-12 xl:h-0'></div>
 <section id="s1" class="h-screen w-screen overflow-hidden">
   <ContentWidth class="flex flex-col h-full items-start justify-end relative">
     <PrismicImage
@@ -89,7 +89,7 @@
   </ContentWidth>
 </section>
 
-
+<!-- 
 <section
   id="s4"
   class="w-screen bg-primary text-white mt-16 py-16 md:mt-24 md:py-24 relative overflow-hidden"
@@ -141,18 +141,7 @@
     </div>
   </ContentWidth>
 </section>
-<section id="s5">
-  <ScreenWidthImage
-    field={content.s5_background}
-    class="h-full flex flex-col items-start justify-end py-24"
-    darken
-  >
-    <PrismicImage class="w-full md:w-3/5" field={content.s5_title} />
-    <DefaultButton class="mt-12" isWhite onclick={() => (isRequestModalOpen = true)}
-      >Request Info</DefaultButton
-    >
-  </ScreenWidthImage>
-</section>
+
 
 <section id="s6" class="w-screen mt-20 lg:mt-52 text-dark">
   <ContentWidth>
@@ -195,4 +184,4 @@
 
 
 
-
+ -->
