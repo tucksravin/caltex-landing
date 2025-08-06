@@ -8,7 +8,7 @@ import ScreenWidthImage from "$lib/components/ScreenWidth/ScreenWidthImage.svelt
   $effect(() => { data; content = data.page.data });
 </script>
 
-<ContentWidth class='gap-20 flex flex-col items-start justify-end py-48 h-[75vh]'>
+<ContentWidth class='flex flex-col items-start justify-start py-48'>
     <h1>AED LEASING</h1>
 </ContentWidth>
 
@@ -35,7 +35,7 @@ import ScreenWidthImage from "$lib/components/ScreenWidth/ScreenWidthImage.svelt
           <div
             class="h-40 md:h-52 w-full bg-white text-primary flex flex-row justify-between items-center rounded-[7px] p-11 gap-11"
           >
-            <PrismicImage class="w-32" field={icon.icon} />
+            <PrismicImage class="w-32 h-32" field={icon.icon} />
             <h3>{icon.label}</h3>
           </div>
         </div>
