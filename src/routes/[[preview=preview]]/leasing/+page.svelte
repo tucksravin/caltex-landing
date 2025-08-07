@@ -15,8 +15,9 @@ import ScreenWidthImage from "$lib/components/ScreenWidth/ScreenWidthImage.svelt
 <section id="s5">
   <ScreenWidthImage
     field={content.s5_background}
-    class="h-full flex flex-col items-start justify-end py-24"
+    class="h-full flex flex-col items-start justify-start py-24"
     darken
+    shorten
   >
     <PrismicImage class="w-full md:w-3/5" field={content.s5_title} />
     

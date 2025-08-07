@@ -11,6 +11,7 @@
 	export let vimeoId = "";
 	export let darken = false;
 	export let backdrop = false;
+	export let shorten = false;
   
 	let viewportHeight: number;
 	let viewportWidth: number;
@@ -22,7 +23,7 @@
   />
   
   <section
-	class="h-screen w-screen overflow-clip 
+	class="{shorten?"h-[80vh]":"h-screen"} w-screen overflow-clip 
 	  {backdrop
 	  ? 'fixed -z-10 top-0 left-0'
 	  : 'relative'}"
