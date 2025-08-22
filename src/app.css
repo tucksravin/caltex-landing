@@ -160,7 +160,10 @@ span{
 }
 
 @media only screen and (max-width:1024px) {
-    h1, a h1{
+    h1{
+        font-size: 64px
+    }
+   a h1{
         font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -195,7 +198,7 @@ span{
 }
 
 @media only screen and (max-width:786px) {
-    h1, a h1{
+     a h1{
         font-size: 32px;
     font-style: normal;
     font-weight: 700;
