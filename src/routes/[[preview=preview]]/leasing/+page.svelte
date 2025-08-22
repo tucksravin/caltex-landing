@@ -8,7 +8,7 @@ import ScreenWidthImage from "$lib/components/ScreenWidth/ScreenWidthImage.svelt
   $effect(() => { data; content = data.page.data });
 </script>
 
-<ContentWidth class='flex flex-col items-start justify-start py-48'>
+<ContentWidth class='flex flex-col items-start justify-start pt-48 pb-24'>
     <h1>AED LEASING</h1>
 </ContentWidth>
 
@@ -24,7 +24,7 @@ import ScreenWidthImage from "$lib/components/ScreenWidth/ScreenWidthImage.svelt
   </ScreenWidthImage>
 </section>
 
-<section id="s2" class="w-screen mt-20 lg:mt-52">
+<section id="s2" class="w-screen mt-24 -mb-24">
   <ContentWidth class="flex flex-col items-start justify-start gap-8 lg:gap-12">
     <div class="w-full flex justify-center flex-wrap">
       {#each content.s2_icons as icon, i}

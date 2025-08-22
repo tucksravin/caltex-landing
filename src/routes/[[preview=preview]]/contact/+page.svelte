@@ -10,7 +10,7 @@ import ContentWidth from "$lib/components/ContentWidth/ContentWidth.svelte";
     <h1>Contact Us</h1>
 </ContentWidth>
 
-<section id="s7" class="w-screen mt-24 lg:mt-36 relative lg:mb-96 lg:pb-24">
+<section id="s7" class="w-screen mt-12 relative lg:mb-96 lg:pb-24">
   <PrismicImage
     class="absolute h-[100vw] w-screen top-0 right-[4vw] lg:top-[5vw] lg:left-0 lg:h-[40vw] lg:w-[40vw] rounded-r-lg"
     field={content.s7_image}

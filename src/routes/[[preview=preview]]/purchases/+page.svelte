@@ -69,7 +69,7 @@ let isRequestModalOpen = $state(false);
     <h1>AED Purchases</h1>
 </ContentWidth>
 
-<section id="s3" class="w-screen mt-24 relative">
+<section id="s3" class="w-screen mt-12 relative -mb-24">
   <PrismicImage
     class="absolute h-[100vw] w-screen top-0 right-[4vw] lg:top-[5vw] lg:left-0 lg:h-[40vw] lg:w-[40vw] rounded-r-lg"
     field={content.s3_image}
