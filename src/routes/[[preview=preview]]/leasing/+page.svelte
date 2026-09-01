@@ -2,6 +2,7 @@
   import ContentWidth from "$lib/components/ContentWidth/ContentWidth.svelte";
   import { PrismicImage } from "@prismicio/svelte";
   import ScreenWidthImage from "$lib/components/ScreenWidth/ScreenWidthImage.svelte";
+  import { cappedWidths } from "@reddoorla/maintenance/images";
 
   let { data, ..._rest } = $props();
   let content = $derived(data.page.data);
@@ -22,6 +23,8 @@
     <PrismicImage
       class="w-full md:w-3/5"
       field={content.s5_title}
+      widths={cappedWidths(content.s5_title)}
+      sizes="(min-width: 768px) 53vw, 88vw"
       loading="eager"
       fetchpriority="high"
     />
@@ -36,7 +39,13 @@
           <div
             class="h-40 md:h-52 w-full bg-white text-primary flex flex-row justify-between items-center rounded-[7px] p-11 gap-11"
           >
-            <PrismicImage class="w-32 h-32" field={icon.icon} />
+            <PrismicImage
+              class="w-32 h-32"
+              field={icon.icon}
+              widths={cappedWidths(icon.icon, [128, 256, 384])}
+              sizes="128px"
+              loading="lazy"
+            />
             <h3>{icon.label}</h3>
           </div>
         </div>

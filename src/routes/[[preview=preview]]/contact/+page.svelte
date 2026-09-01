@@ -2,6 +2,7 @@
   import ContentWidth from "$lib/components/ContentWidth/ContentWidth.svelte";
   import { PrismicImage, PrismicRichText } from "@prismicio/svelte";
   import { CONTACT } from "$lib/constants/contact";
+  import { cappedWidths } from "@reddoorla/maintenance/images";
   let { data, ..._rest } = $props();
   let content = $derived(data.page.data);
 </script>
@@ -14,6 +15,8 @@
   <PrismicImage
     class="absolute h-[100vw] w-screen top-0 right-[4vw] lg:top-[5vw] lg:left-0 lg:h-[40vw] lg:w-[40vw] rounded-r-lg"
     field={content.s7_image}
+    widths={cappedWidths(content.s7_image)}
+    sizes="(min-width: 1024px) 40vw, 100vw"
     loading="eager"
     fetchpriority="high"
   />
