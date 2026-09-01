@@ -4,6 +4,7 @@
   import placeholder from "../../assets/images/background_placeholder.svg";
   import ContentWidth from "../ContentWidth/ContentWidth.svelte";
   import { PrismicImage } from "@prismicio/svelte";
+  import { cappedWidths } from "@reddoorla/maintenance/images";
 
   interface Props {
     src?: string;
@@ -62,6 +63,8 @@
     {:else}
       <PrismicImage
         {field}
+        widths={cappedWidths(field)}
+        sizes="100vw"
         loading={priority ? "eager" : "lazy"}
         fetchpriority={priority ? "high" : "auto"}
         decoding="async"

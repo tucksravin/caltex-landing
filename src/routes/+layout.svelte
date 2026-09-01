@@ -13,6 +13,7 @@
   import { Menu } from "@lucide/svelte";
   import { requestModal } from "$lib/stores/requestModal.svelte";
   import { CONTACT } from "$lib/constants/contact";
+  import { cappedWidths } from "@reddoorla/maintenance/images";
 
   /**
    * @typedef {Object} Props
@@ -52,6 +53,11 @@
       <a href="/" onclick={() => (showNav = false)}>
         <PrismicImage
           field={viewportWidth > 768 ? content.logo : content.logo_mark}
+          widths={cappedWidths(
+            viewportWidth > 768 ? content.logo : content.logo_mark,
+            [160, 320, 480],
+          )}
+          sizes="(min-width: 768px) 220px, 80px"
           loading="eager"
           fetchpriority="high"
           class="w-auto h-10"
@@ -109,6 +115,11 @@
         <a href="/" onclick={() => (showNav = false)}>
           <PrismicImage
             field={viewportWidth > 768 ? content.logo : content.logo_mark}
+            widths={cappedWidths(
+              viewportWidth > 768 ? content.logo : content.logo_mark,
+              [160, 320, 480],
+            )}
+            sizes="(min-width: 768px) 220px, 80px"
             loading="lazy"
             class="w-auto h-10"
           />

@@ -1,6 +1,7 @@
 <script lang="ts">
   import ContentWidth from "$lib/components/ContentWidth/ContentWidth.svelte";
   import { PrismicImage } from "@prismicio/svelte";
+  import { cappedWidths } from "@reddoorla/maintenance/images";
 
   let { data, ..._rest } = $props();
   let content = $derived(data.page.data);
@@ -12,12 +13,16 @@
     <PrismicImage
       class="w-3/5 pb-4 -translate-x-[20%] hidden xs:block md:hidden"
       field={content.aed}
+      widths={cappedWidths(content.aed)}
+      sizes="53vw"
       loading="eager"
       fetchpriority="high"
     />
     <PrismicImage
       class="md:w-2/3 mb-48 md:mb-64"
       field={content.s1_title}
+      widths={cappedWidths(content.s1_title)}
+      sizes="(min-width: 768px) 59vw, 88vw"
       loading="eager"
       fetchpriority="high"
     />
@@ -29,6 +34,8 @@
     <PrismicImage
       class="absolute bottom-8 right-0 w-1/2 translate-x-[20%] hidden md:block"
       field={content.aed}
+      widths={cappedWidths(content.aed)}
+      sizes="44vw"
       loading="eager"
       fetchpriority="high"
     />
@@ -61,6 +68,9 @@ from `$lib/stores/requestModal.svelte`.
             <PrismicImage
               class="w-full h-full  absolute top-0 left-0 blur-sm brightness-75"
               field={block.image}
+              widths={cappedWidths(block.image)}
+              sizes="(min-width: 768px) 44vw, 88vw"
+              loading="lazy"
             />
             <h4 class="z-10 lg:w-1/2">{block.title}</h4>
             <p class="z-10">{block.body}</p>
@@ -115,6 +125,9 @@ from `$lib/stores/requestModal.svelte`.
             >
               <PrismicImage
                 field={step.number}
+                widths={cappedWidths(step.number, [160, 320, 480])}
+                sizes="(min-width: 768px) 160px, 120px"
+                loading="lazy"
                 class="h-3/5 md:h-4/5 xl:h-full"
               />
             </div>
